@@ -1,11 +1,15 @@
-- 👋 Hi, I’m @Sowmyath
-ota1206
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-Sowmyathota1206/Sowmyathota1206 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+#include <stdio.h>
+int main()
+{
+    int i,j;
+    char ch='A';
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%c ",ch++);
+        }
+        printf("\n");
+    }
+    return 0;
+}
