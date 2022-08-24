@@ -1,26 +1,31 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+
 int main()
 {
-int n, i, j;
-printf("Enter the number of rows: ");
-scanf("%d",&n);
-for(i = n; i >= 1; i--)
-{
-for(j = 1; j <= i; j++)
-{
-printf("%d",j);
-}
-printf("\n");
-}
-return 0;
-}
+    int rows, cols, i, j, k;
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter number of columns: ");
+    scanf("%d", &cols);
 
-Output:
-enter n value:6
-6
-65
-654
-6543
-65432
-654321
+    k = 1;
+    for(i=1; i<=rows; i++)
+    {
+        for(j=1; j<=cols; j++, k++)
+        {
+            printf("%-3d", k);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+output:
+enter n value:5
+1  2  3  4  5
+6  7  8  9 10
+11 12 13 14 15
+16 17 18 19 20
+21 22 23 24 25
+
