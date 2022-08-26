@@ -1,31 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    int rows, cols, i, j, k;
-    printf("Enter number of rows: ");
-    scanf("%d", &rows);
-    printf("Enter number of columns: ");
-    scanf("%d", &cols);
+    int i;
+    int upper=0,lower=0;
+    char ch[100];
 
-    k = 1;
-    for(i=1; i<=rows; i++)
-    {
-        for(j=1; j<=cols; j++, k++)
-        {
-            printf("%-3d", k);
-        }
+    printf("Enter the String:\n");
+    gets(ch);
 
-        printf("\n");
+    for(i=0; ch[i]!=0; i++){
+
+if(ch[i]>='A' && ch[i]<='Z'){
+    upper++;
+}
+else if(ch[i]>='a' && ch[i]<='z'){
+    lower++;
+}
     }
-
+printf("lowercase letters: %d",lower);
+printf("\nuppercase letters: %d",upper);
+getch();
     return 0;
 }
-output:
-enter n value:5
-1  2  3  4  5
-6  7  8  9 10
-11 12 13 14 15
-16 17 18 19 20
-21 22 23 24 25
-
